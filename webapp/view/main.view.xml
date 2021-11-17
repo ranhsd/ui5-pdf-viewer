@@ -1,13 +1,14 @@
- <mvc:View controllerName="com.ui5.myUI5App.controller.main"
-  displayBlock="true"
+<mvc:View controllerName="com.ui5.myUI5App.controller.main" displayBlock="true"
   xmlns="sap.m"
-  xmlns:pdf="bitech.ui5.pdf"
+  xmlns:u="sap.ui.unified"
+  xmlns:pdf="ui5lab.wl.pdf"
   xmlns:mvc="sap.ui.core.mvc">
-  <App id="idAppControl" >
+  <App id="idAppControl">
     <pages>
       <Page title="{i18n>title}">
-        <content>
-        <pdf:Viewer src="assets/file.pdf"></pdf:Viewer>
+        <content>         
+          <u:FileUploader name="myFileUpload" change="handleFileChange" tooltip="Upload your file to the local server" mimeType="application/pdf" />
+           <pdf:PdfViewer id="pdfViewer" height="100%"  visible="false"/>
         </content>
       </Page>
     </pages>

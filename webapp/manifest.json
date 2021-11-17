@@ -39,7 +39,8 @@
       "libs": {
         "sap.ui.core": {},
         "sap.m": {},
-        "sap.ui.layout": {}
+        "sap.ui.layout": {},
+        "ui5lab.wl.pdf": {}
       }
     },
     "contentDensities": {
@@ -60,6 +61,9 @@
           "uri": "css/style.css"
         }
       ]
+    },
+    "resourceRoots": {
+      "ui5lab.wl.pdf": "./libs/ui5lab/wl/pdf"
     },
     "routing": {
       "config": {
