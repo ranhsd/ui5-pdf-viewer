@@ -12,8 +12,7 @@ sap.ui.define([
         if (source) {
           pdfViewer.setPdfSource(source);
           pdfViewer.setVisible(true);
-        }
-        
+        }        
       });
     },
 
@@ -25,7 +24,7 @@ sap.ui.define([
       reader.onerror = function() {
         callback(null);
       }
-      reader.readAsDataURL(file);
+      reader.readAsDataURL(file); 
     }
   });
 });

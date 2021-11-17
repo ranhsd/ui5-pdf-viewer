@@ -21,20 +21,3 @@ server:
       configuration:
         port: 35729
         path: webapp        
-
-# specVersion: "2.6"
-# kind: extension
-# type: project-shim
-# metadata:
-#   name: bitech.ui5.pdf
-# shims:
-#   configurations:
-#     pdfjs-dist:
-#       specVersion: "2.6"
-#       type: module
-#       metadata:
-#         name: "@bitech-ag/ui5.pdf"
-#       resources:
-#         configuration:
-#           paths:
-#             /resources/bitech/ui5/pdf: ""
