@@ -1,0 +1,15 @@
+ <mvc:View controllerName="com.ui5.myUI5App.controller.main"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:pdf="bitech.ui5.pdf"
+  xmlns:mvc="sap.ui.core.mvc">
+  <App id="idAppControl" >
+    <pages>
+      <Page title="{i18n>title}">
+        <content>
+        <pdf:Viewer src="assets/file.pdf"></pdf:Viewer>
+        </content>
+      </Page>
+    </pages>
+  </App>
+</mvc:View>
